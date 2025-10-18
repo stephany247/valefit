@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color-primary: hsla(15, 87%, 58%, 1); /* orange */
+  --color-accent: hsla(15, 87%, 58%, 0.7); /* orange */
+  --color-secondary: hsla(195, 46%, 5%, 1); /* black */
+  --color-background: hsla(280, 23%, 95%, 1); /* white */
+  --font-crimson-pro: "Crimson Pro", serif;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-5xl xl:max-w-6xl px-6 lg:px-12;
+  }
+}
+
+body {
+  @apply font-crimson-pro bg-background text-secondary;
+}
+
+h3 {
+  @apply text-2xl font-bold;
+}
+
+input {
+  @apply flex-1 px-3 py-2 rounded-md text-black bg-background hover:bg-background/90 focus-within:bg-background/95 focus:outline-2 focus-within:outline-primary caret-primary;
+}
+
+a {
+  @apply hover:text-primary transition-colors duration-300 ease-in-out;
+}
+
+a, button {
+  @apply cursor-pointer;
+}
+
+/* Icon buttons (for footer social links, nav, etc.) */
+.icon-btn {
+  @apply bg-background text-secondary p-2 rounded-2xl hover:text-primary;
+}
+
+/* Footer links */
+

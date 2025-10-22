@@ -7,7 +7,8 @@
   --color-primary: hsla(15, 87%, 58%, 1); /* orange */
   --color-accent: hsla(15, 87%, 58%, 0.7); /* orange */
   --color-secondary: hsla(195, 46%, 5%, 1); /* black */
-  --color-background: hsla(280, 23%, 95%, 1); /* white */
+  --color-background: hsla(0, 0%, 100%, 1); /* white */
+  --color-muted: hsla(280, 23%, 95%, 1);
   --font-crimson-pro: "Crimson Pro", serif;
 }
 
@@ -26,7 +27,7 @@ h3 {
 }
 
 input {
-  @apply flex-1 px-3 py-2 rounded-md text-black bg-background hover:bg-background/90 focus-within:bg-background/95 focus:outline-2 focus-within:outline-primary caret-primary;
+  @apply flex-1 px-3 py-2 w-full rounded-md text-black bg-background hover:bg-background/90 focus-within:bg-background/95 focus:outline-2 focus-within:outline-primary caret-primary;
 }
 
 a {

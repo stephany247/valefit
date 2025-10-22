@@ -62,10 +62,10 @@ function Navbar() {
 
         {/* Mobile Menu Overlay */}
         {isOpen && (
-          <div className="absolute inset-0 bg-background h-fit flex flex-col items-end justify-start gap-4 p-6 z-50 shadow-lg">
+          <div className="fixed inset-0 bg-background h-fit flex flex-col items-end justify-start gap-4 p-6 z-50 shadow-lg">
             {/* Close Button */}
             <button
-              className="text-3xl font-bold self-start"
+              className="text-3xl font-bold self-endt"
               onClick={() => setIsOpen(false)}
               aria-label="Close menu"
             >

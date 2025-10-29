@@ -1,9 +1,24 @@
-import React from 'react'
+import HeroSection from "../sections/home/HeroSection";
+import FeaturesSection from "../sections/home/FeaturesSection";
+import ScheduleSection from "../sections/home/ScheduleSection";
+import ServicesSection from "../sections/home/ServiceSection";
+import youngWomanTraining from "../assets/young-woman-training.jpg";
+import Testimonials from "../sections/home/Testimonials";
+import CallToActionSection from "../sections/home/CallToActionSection";
+import ImageSection from "../components/ImageSection";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <HeroSection />
+      <FeaturesSection />
+      <ImageSection src={youngWomanTraining} alt="Young woman training" />
+      <ScheduleSection />
+      <ServicesSection />
+      <Testimonials />
+      <CallToActionSection />
+    </>
+  );
 }
 
-export default Home
+export default Home;

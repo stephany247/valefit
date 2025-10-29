@@ -1,5 +1,14 @@
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "About Us", path: "/about" },
+  { name: "Health Blog", path: "/blog" },
+  { name: "Membership", path: "/membership" },
+  { name: "Contact", path: "/contact" },
+];
 
 function Footer() {
   return (
@@ -33,17 +42,14 @@ function Footer() {
         <div className="space-y-4">
           <h3 className="text-lg font-semibold text-primary">Quick Links</h3>
           <ul className="flex flex-col gap-2">
-            {[
-              "Home",
-              "About Us",
-              "Health Blog",
-              "Membership",
-              "Contact Us",
-            ].map((link, idx) => (
-              <li key={idx}>
-                <a href="#" className="footer-link">
-                  {link}
-                </a>
+            {navLinks.map(({ name, path }) => (
+              <li key={name}>
+                <Link
+                  to={path}
+                  className="footer-link hover:text-primary transition-colors"
+                >
+                  {name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -58,7 +64,7 @@ function Footer() {
             <h3 className="">Subscribe to our Newsletter</h3>
           </div>
           <form className="flex flex-col gap-3">
-            <fieldset className="flex gap-3">
+            <fieldset className="flex gap-3 w-full">
               <input type="text" placeholder="Your name" />
               <input type="email" placeholder="example@gmail.com" />
             </fieldset>

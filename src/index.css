@@ -63,3 +63,50 @@ button {
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
   }
 }
+
+
+
+
+.bg-membership {
+  background-image: url('/src/assets/mobileMembershipImg.png');
+}
+
+
+@media (min-width: 640px) {
+.bg-membership {
+    background-image: url('/src/assets/mainMembershipImg.png');
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+.bg-membership {
+    background-image: url('/src/assets/mainMembershipImg.png');
+  }
+}
+
+
+
+
+@media (min-width: 1024px) {
+ .bg-membership {
+    background-image: url('/src/assets/mainMembershipImg.png');
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+ .bg-desktop-workoutLady {
+    background-image: url('/src/assets/workoutLadyDesktop.png');
+  }
+}
+
+
+@media (min-width: 1440px) {
+ .bg-desktop-workoutLady {
+    background-image: url('/src/assets/me.png');
+  }
+}

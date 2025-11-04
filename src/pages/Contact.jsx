@@ -1,9 +1,11 @@
-import React from 'react'
+import ContactDetails from "../ui/ContactDetails";
 
 function Contact() {
-  return (
-    <div>Contact</div>
-  )
+	return (
+		<div className="w-full">
+			<ContactDetails />
+		</div>
+	);
 }
 
-export default Contact
+export default Contact;

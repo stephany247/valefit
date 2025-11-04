@@ -81,7 +81,7 @@ function Footer() {
       {/* Copyright */}
       <section className="text-center mt-4 border-t border-gray-400 py-4">
         <p>
-          © {new Date().getFullYear()}{" "}
+          © {new Date().getFullYear()}
           <span className="font-semibold text-primary">ValeFit LTD</span>. All
           Rights Reserved.
         </p>

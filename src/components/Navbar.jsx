@@ -3,6 +3,7 @@ import { FaListUl, FaRegUserCircle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
@@ -14,7 +15,7 @@ function Navbar() {
   ];
 
   return (
-    <header className="shadow-md bg-background">
+    <header className="shadow-md bg-background min-w-full">
       <nav className="container relative flex justify-between items-center p-6">
         {/* Logo + Menu Button (mobile) */}
         <div className="flex justify-between items-center w-full md:w-auto">

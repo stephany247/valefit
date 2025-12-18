@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { FaListUl, FaRegUserCircle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +14,7 @@ function Navbar() {
   ];
 
   return (
-    <header className="shadow-md bg-background min-w-full">
+    <header className="shadow-md bg-background min-w-full sticky top-0 z-30">
       <nav className="container relative flex justify-between items-center p-6">
         {/* Logo + Menu Button (mobile) */}
         <div className="flex justify-between items-center w-full md:w-auto">
@@ -37,12 +36,16 @@ function Navbar() {
         <ul className="hidden md:flex md:gap-6 lg:gap-10 text-lg font-medium capitalize">
           {navLinks.map(({ name, path }) => (
             <li key={name}>
-              <Link
+              <NavLink
                 to={path}
-                className="hover:text-orange-500 transition-colors"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary"
+                    : "hover:text-primary transition-colors"
+                }
               >
                 {name}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -51,7 +54,7 @@ function Navbar() {
         <div className="hidden md:flex gap-8 items-center">
           <button
             aria-label="User profile"
-            className="text-3xl font-bold hover:text-orange-500 transition-colors"
+            className="text-3xl font-bold hover:text-primary transition-colors"
           >
             <FaRegUserCircle />
           </button>
@@ -77,12 +80,16 @@ function Navbar() {
             <ul className="flex flex-col items-center gap-6 text-2xl font-medium w-full capitalize mt-4">
               {navLinks.map(({ name, path }) => (
                 <li key={name}>
-                  <Link
+                  <NavLink
                     to={path}
-                    className="hover:text-orange-500 transition-colors"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-primary"
+                        : "hover:text-primary transition-colors"
+                    }
                   >
                     {name}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>

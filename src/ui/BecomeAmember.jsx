@@ -1,3 +1,5 @@
+import femalePressup from "../assets/female-pressup.png"
+
 export default function BecomeAmember() {
   return (
     <section className="w-full px-4 py-12 flex justify-center">
@@ -28,7 +30,7 @@ export default function BecomeAmember() {
         {/* Image */}
         <figure className="w-full max-w-md h-auto rounded-2xl overflow-hidden">
           <img
-            src="src/assets/female-pressup.png"
+            src={femalePressup}
             alt="Membership"
             className="w-full h-full object-cover"
           />

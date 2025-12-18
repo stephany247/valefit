@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { FiMapPin, FiClock, FiPhone, FiMail } from "react-icons/fi";
+
+import workoutLady from "../assets/workoutLady.png"
 /* -------------------- DATA -------------------- */
 
 const contactDetails = [
@@ -119,7 +121,7 @@ export default function Contact() {
 	  {/* ---------- IMAGE ---------- */}
 	  <figure className="w-full">
 		<img
-		  src="src/assets/workoutLady.png"
+		  src={workoutLady}
 		  alt="Workout"
 		  className="w-full h-auto md:h-[420px] aspect-16/12 object-cover rounded-xl"
 		/>

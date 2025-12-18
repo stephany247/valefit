@@ -1,9 +1,15 @@
-import React from 'react'
+import BlogGrid from "../sections/blog/BlogGrid";
+import { BlogHero } from "../sections/blog/BlogHero";
+import BlogIntro from "../sections/blog/BlogIntro";
+import LoadMore from "../sections/blog/LoadMore";
 
-function Blog() {
+export default function Blog() {
   return (
-    <div>Blog</div>
-  )
+    <>
+      <BlogHero />
+      <BlogIntro />
+      <BlogGrid />
+      <LoadMore />
+    </>
+  );
 }
-
-export default Blog

@@ -86,10 +86,10 @@ const elitePlanFeatures = [
 //28.125
 function Membership() {
 	return (
-		<div className="w-full min-h-screen flex flex-col items-center ">
+		<div className="w-full flex flex-col items-center">
 			<MembershipHeroSection />
 			<HorizontalCard />
-			<div className="w-full min-h-[28.125rem] flex flex-col justify-center items-center gap-5 mt-8 mb-16 min-[48rem]:h-[35.1875rem] min-[48rem]:flex-row min-[48rem]:py-4 min-[64rem]:w-[62rem] min-[64rem]:h-[42.5rem] min-[80rem]:w-[80rem] min-[80rem]:h-[52rem] min-[80rem]:gap-8">
+			<div className="w-full container mx-auto flex flex-col md:flex-row justify-center items-start gap-5 my-8 md:mb-20">
 				<Cards
 					features={basicPlanFeatures}
 					plan="Basic Plan"
@@ -106,7 +106,7 @@ function Membership() {
 					bgColor="bg-[#071013]"
 					borderBtnColor="border border-[#F16436]"
 					url="/"
-					className="min-[48rem]:self-end min-[64rem]:self-end"
+					className="md:translate-y-10"
 				/>
 				<Cards
 					features={elitePlanFeatures}
